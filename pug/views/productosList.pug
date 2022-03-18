@@ -1,0 +1,22 @@
+html
+    head 
+        title Productos :)
+        style. 
+            body {font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; text-align: center; padding: 10px;}
+    body
+        if prods.length != 0
+            table
+                thead   
+                    td Título 
+                    td Precio 
+                    td Imagen
+                tbody 
+                    each prod in prods 
+                        tr 
+                            td=prod.title 
+                            td=prod.price 
+                            td 
+                                img(src=prod.thumbnail)
+        else 
+            p(style='background-color: plum') No hay productos 
+        a(href='./') Formulario para agregar productos

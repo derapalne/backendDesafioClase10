@@ -1,0 +1,16 @@
+3) Handlebars:
+    No me gustó, la documentación es realmente confusa, existen dos versiones, una que es con express y otra que no
+    y las diapositivas no explican esto, estuve leyendo una versión y habían cosas que no aplicaban, tratando de leer la documentación
+    de express-handlebars los ejemplos que me daban no servían por una colisión entre ES y CommonJS, en cuanto a
+    funcionalidad está bastante bien pero no encontré buenas explicaciones, en las diapositivas se ven cosas muy
+    por encima, todos los ejemplos apiñados y cosas que no se explican lo suficiente. No vendría mal expandir un poco la info
+    en las diapos.
+2) Pug:
+    Mejor documentado, más fácil de entender, no me gusta mucho la sintaxis y no entendí cómo aplicar los parciales pero
+    me trajo muchísimos menos problemas que handlebars.
+1) EJS:
+    No me gusta la sintaxis pero es el que mejor entiendo y que más sencillo se me hace usar, incrustando fragmentos de 
+    JS de manera que quizás sea confusa para otras personas pero que me resulta mucho más fácil de entender para mí.
+
+En conclusión, si fuese por mí usaría EJS, pero ahora habiendo entendido la manera medio convolucionada de funcionar de handlebars
+podría usarlo sin prolemas, aunque no me guste tanto. Lo mismo con Pug, tendría que aprender a incrustar parciales y sale andando.

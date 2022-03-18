@@ -1,0 +1,23 @@
+html
+    head 
+        title Productos :)
+        style. 
+            body {font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;text-align: center;padding: 10px;}
+            table,th,td {border: 1px solid black;}
+            table {width: 70%;margin: auto;}
+            img {width: 64px;}
+    body
+        h1 Ingrese los productos por favor 
+        form(action='./productos', method='post')
+            label(for='title') Título
+            input(type='text',name='title',id='title')
+            br
+            label(for='price') Precio
+            input(type='number',name='price',id='price')
+            br
+            label(for='thumbnail') Thumbnail
+            input(type='text',name='thumbnail',id='thumbnail')
+            br
+            input(type='submit',value='Agregar')
+        a(href='./productos') Ver la lista de productos
+

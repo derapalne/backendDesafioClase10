@@ -1,0 +1,21 @@
+{{#unless prods.length}}
+    <p style="background-color: plum">No hay productos</p>
+{{else}}
+    <table>
+        <thead>
+            <td>Título</td>
+            <td>Precio</td>
+            <td>Imagen</td>
+        </thead>
+        <tbody>
+            {{#each prods}}
+                <tr>
+                    <td>{{this.title}}</td>
+                    <td>{{this.price}}</td>
+                    <td><img src={{this.thumbnail}} /></td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+{{/unless}}
+<a href="./">Formulario para agregar productos</a>

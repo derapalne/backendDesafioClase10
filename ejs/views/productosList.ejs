@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('../partials/header.ejs'); %>
+    </head>
+    <body>
+        <% if(prods.length >= 1) { %>
+        <table>
+            <thead>
+                <td>Título</td>
+                <td>Precio</td>
+                <td>Imagen</td>
+            </thead>
+            <tbody>
+                <% prods.forEach((prod) => { %>
+                <tr>
+                    <td><%=prod.title %></td>
+                    <td><%=prod.price %></td>
+                    <td><img src=<%=prod.thumbnail%> /></td>
+                </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <% } else { %>
+        <p style="background-color: plum">No hay productos</p>
+        <% } %>
+        <a href="./">Formulario para agregar productos</a>
+    </body>
+</html>
